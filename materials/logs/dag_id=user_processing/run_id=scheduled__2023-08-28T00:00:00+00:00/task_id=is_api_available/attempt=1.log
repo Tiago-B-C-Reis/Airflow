@@ -1,0 +1,98 @@
+[2023-08-29T00:01:46.592+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: user_processing.is_api_available scheduled__2023-08-28T00:00:00+00:00 [queued]>
+[2023-08-29T00:01:46.677+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: user_processing.is_api_available scheduled__2023-08-28T00:00:00+00:00 [queued]>
+[2023-08-29T00:01:46.700+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-29T00:01:46.701+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-08-29T00:01:46.706+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-08-29T00:01:46.811+0000] {taskinstance.py:1383} INFO - Executing <Task(HttpSensor): is_api_available> on 2023-08-28 00:00:00+00:00
+[2023-08-29T00:01:46.910+0000] {standard_task_runner.py:55} INFO - Started process 20360 to run task
+[2023-08-29T00:01:47.085+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'user_processing', 'is_api_available', 'scheduled__2023-08-28T00:00:00+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmpcy8uvcsd']
+[2023-08-29T00:01:47.115+0000] {standard_task_runner.py:83} INFO - Job 12: Subtask is_api_available
+[2023-08-29T00:01:47.641+0000] {task_command.py:376} INFO - Running <TaskInstance: user_processing.is_api_available scheduled__2023-08-28T00:00:00+00:00 [running]> on host f65dd69de24d
+[2023-08-29T00:01:48.112+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=is_api_available
+AIRFLOW_CTX_EXECUTION_DATE=2023-08-28T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-08-28T00:00:00+00:00
+[2023-08-29T00:01:48.143+0000] {http.py:120} INFO - Poking: api/
+[2023-08-29T00:01:48.299+0000] {base.py:71} INFO - Using connection ID 'user_api' for task execution.
+[2023-08-29T00:01:48.317+0000] {http.py:148} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2023-08-29T00:01:56.332+0000] {http.py:206} WARNING - ('Connection aborted.', OSError(0, 'Error')) Tenacity will retry to execute the operation
+[2023-08-29T00:01:56.412+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 424, in connect
+    tls_in_tls=tls_in_tls,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 450, in ssl_wrap_socket
+    sock, context, tls_in_tls, server_hostname=server_hostname
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/lib/python3.7/ssl.py", line 423, in wrap_socket
+    session=session
+  File "/usr/local/lib/python3.7/ssl.py", line 870, in _create
+    self.do_handshake()
+  File "/usr/local/lib/python3.7/ssl.py", line 1139, in do_handshake
+    self._sslobj.do_handshake()
+OSError: [Errno 0] Error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 499, in send
+    timeout=timeout,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 710, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/connection.py", line 424, in connect
+    tls_in_tls=tls_in_tls,
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 450, in ssl_wrap_socket
+    sock, context, tls_in_tls, server_hostname=server_hostname
+  File "/home/airflow/.local/lib/python3.7/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/usr/local/lib/python3.7/ssl.py", line 423, in wrap_socket
+    session=session
+  File "/usr/local/lib/python3.7/ssl.py", line 870, in _create
+    self.do_handshake()
+  File "/usr/local/lib/python3.7/ssl.py", line 1139, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', OSError(0, 'Error'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 189, in execute
+    poke_return = self.poke(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/http/sensors/http.py", line 126, in poke
+    extra_options=self.extra_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/http/hooks/http.py", line 149, in run
+    return self.run_and_check(session, prepped_request, extra_options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/http/hooks/http.py", line 207, in run_and_check
+    raise ex
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/http/hooks/http.py", line 199, in run_and_check
+    response = session.send(prepped_request, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/adapters.py", line 547, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', OSError(0, 'Error'))
+[2023-08-29T00:01:56.618+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=user_processing, task_id=is_api_available, execution_date=20230828T000000, start_date=20230829T000146, end_date=20230829T000156
+[2023-08-29T00:01:56.670+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 12 for task is_api_available (('Connection aborted.', OSError(0, 'Error')); 20360)
+[2023-08-29T00:01:56.758+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2023-08-29T00:01:57.028+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

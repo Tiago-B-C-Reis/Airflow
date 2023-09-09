@@ -1,0 +1,24 @@
+[2023-09-03T16:07:13.826+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: inside_group_dag.processing_tasks.training_model_b scheduled__2023-09-02T00:00:00+00:00 [queued]>
+[2023-09-03T16:07:13.833+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: inside_group_dag.processing_tasks.training_model_b scheduled__2023-09-02T00:00:00+00:00 [queued]>
+[2023-09-03T16:07:13.833+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-03T16:07:13.833+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-09-03T16:07:13.834+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-03T16:07:13.842+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): processing_tasks.training_model_b> on 2023-09-02 00:00:00+00:00
+[2023-09-03T16:07:13.846+0000] {standard_task_runner.py:55} INFO - Started process 2353 to run task
+[2023-09-03T16:07:13.850+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'inside_group_dag', 'processing_tasks.training_model_b', 'scheduled__2023-09-02T00:00:00+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/inside_group_dag.py', '--cfg-path', '/tmp/tmpm_kom5k4']
+[2023-09-03T16:07:13.851+0000] {standard_task_runner.py:83} INFO - Job 39: Subtask processing_tasks.training_model_b
+[2023-09-03T16:07:13.910+0000] {task_command.py:376} INFO - Running <TaskInstance: inside_group_dag.processing_tasks.training_model_b scheduled__2023-09-02T00:00:00+00:00 [running]> on host 993b415b7ab0
+[2023-09-03T16:07:13.970+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=inside_group_dag
+AIRFLOW_CTX_TASK_ID=processing_tasks.training_model_b
+AIRFLOW_CTX_EXECUTION_DATE=2023-09-02T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-09-02T00:00:00+00:00
+[2023-09-03T16:07:13.971+0000] {logging_mixin.py:120} INFO - model's accuracy: 1.3407543849048333
+[2023-09-03T16:07:13.971+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-09-03T16:07:13.981+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=inside_group_dag, task_id=processing_tasks.training_model_b, execution_date=20230902T000000, start_date=20230903T160713, end_date=20230903T160713
+[2023-09-03T16:07:14.021+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-09-03T16:07:14.037+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

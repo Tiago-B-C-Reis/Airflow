@@ -1,0 +1,26 @@
+[2023-09-05T11:35:52.019+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: user_processing.extract_user scheduled__2023-09-04T00:00:00+00:00 [queued]>
+[2023-09-05T11:35:52.030+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: user_processing.extract_user scheduled__2023-09-04T00:00:00+00:00 [queued]>
+[2023-09-05T11:35:52.031+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-05T11:35:52.031+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2023-09-05T11:35:52.031+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2023-09-05T11:35:52.045+0000] {taskinstance.py:1383} INFO - Executing <Task(SimpleHttpOperator): extract_user> on 2023-09-04 00:00:00+00:00
+[2023-09-05T11:35:52.051+0000] {standard_task_runner.py:55} INFO - Started process 112 to run task
+[2023-09-05T11:35:52.055+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'user_processing', 'extract_user', 'scheduled__2023-09-04T00:00:00+00:00', '--job-id', '101', '--raw', '--subdir', 'DAGS_FOLDER/user_processing.py', '--cfg-path', '/tmp/tmpck8xflhj']
+[2023-09-05T11:35:52.057+0000] {standard_task_runner.py:83} INFO - Job 101: Subtask extract_user
+[2023-09-05T11:35:52.120+0000] {task_command.py:376} INFO - Running <TaskInstance: user_processing.extract_user scheduled__2023-09-04T00:00:00+00:00 [running]> on host 993b415b7ab0
+[2023-09-05T11:35:52.172+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=user_processing
+AIRFLOW_CTX_TASK_ID=extract_user
+AIRFLOW_CTX_EXECUTION_DATE=2023-09-04T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-09-04T00:00:00+00:00
+[2023-09-05T11:35:52.173+0000] {http.py:121} INFO - Calling HTTP method
+[2023-09-05T11:35:52.196+0000] {base.py:71} INFO - Using connection ID 'user_api' for task execution.
+[2023-09-05T11:35:52.206+0000] {http.py:148} INFO - Sending 'GET' to url: https://randomuser.me/api/
+[2023-09-05T11:35:52.570+0000] {http.py:125} INFO - {"results":[{"gender":"female","name":{"title":"Ms","first":"Harper","last":"Thompson"},"location":{"street":{"number":7206,"name":"Chatham Road"},"city":"New Plymouth","state":"Manawatu-Wanganui","country":"New Zealand","postcode":99132,"coordinates":{"latitude":"51.0369","longitude":"58.1400"},"timezone":{"offset":"+2:00","description":"Kaliningrad, South Africa"}},"email":"harper.thompson@example.com","login":{"uuid":"5cb8b285-f6e2-42e3-b207-d851ff2b38ea","username":"heavysnake581","password":"1123","salt":"y4ij3oRi","md5":"139fa94c5a8208dc2920704ad89fc7f7","sha1":"17e3ef6aa22835e24157e4112ffd7f3c709fbff3","sha256":"2aabd6a9b90fa3750b8b7bf67ec6087e3f7e991b6cd5075bbb7065ecafaf0140"},"dob":{"date":"1964-03-24T05:51:26.359Z","age":59},"registered":{"date":"2004-07-31T06:09:31.059Z","age":19},"phone":"(917)-259-6278","cell":"(682)-341-8215","id":{"name":"","value":null},"picture":{"large":"https://randomuser.me/api/portraits/women/90.jpg","medium":"https://randomuser.me/api/portraits/med/women/90.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/90.jpg"},"nat":"NZ"}],"info":{"seed":"9d18e7d0da12d291","results":1,"page":1,"version":"1.4"}}
+[2023-09-05T11:35:52.596+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=user_processing, task_id=extract_user, execution_date=20230904T000000, start_date=20230905T113552, end_date=20230905T113552
+[2023-09-05T11:35:52.644+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2023-09-05T11:35:52.677+0000] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
