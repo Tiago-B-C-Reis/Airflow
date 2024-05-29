@@ -1,0 +1,109 @@
+[2024-05-20T09:06:22.297+0000] {processor.py:154} INFO - Started process (PID=51) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-20T09:06:22.299+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-20T09:06:22.304+0000] {logging_mixin.py:120} INFO - [2024-05-20T09:06:22.303+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T09:06:23.304+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T09:06:23.453+0000] {logging_mixin.py:120} INFO - [2024-05-20T09:06:23.453+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T09:06:23.506+0000] {logging_mixin.py:120} INFO - [2024-05-20T09:06:23.506+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T09:06:23.538+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 1.259 seconds
+[2024-05-20T09:06:53.807+0000] {processor.py:154} INFO - Started process (PID=88) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-20T09:06:53.807+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-20T09:06:53.808+0000] {logging_mixin.py:120} INFO - [2024-05-20T09:06:53.808+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T09:06:54.206+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T09:06:54.229+0000] {logging_mixin.py:120} INFO - [2024-05-20T09:06:54.229+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T09:06:54.256+0000] {logging_mixin.py:120} INFO - [2024-05-20T09:06:54.256+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T09:06:54.269+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 0.463 seconds
+[2024-05-20T13:02:56.511+0000] {processor.py:154} INFO - Started process (PID=52) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:02:56.513+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-20T13:02:56.516+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:02:56.515+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:02:57.660+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:02:57.767+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:02:57.764+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T13:02:57.819+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:02:57.819+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T13:02:57.867+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 1.361 seconds
+[2024-05-20T13:03:41.514+0000] {processor.py:154} INFO - Started process (PID=71) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:03:41.617+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-20T13:03:41.908+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:03:41.766+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:04:13.319+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:04:12.598+0000] {timeout.py:68} ERROR - Process timed out, PID: 71
+[2024-05-20T13:04:15.325+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:04:13.371+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/elastic_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/elastic_dag.py", line 3, in <module>
+    from hooks.elastic.elastic_hook import ElasticHook
+  File "/opt/airflow/plugins/hooks/elastic/elastic_hook.py", line 4, in <module>
+    from elasticsearch import Elasticsearch
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/__init__.py", line 36, in <module>
+    from .client import Elasticsearch
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/client/__init__.py", line 23, in <module>
+    from ..transport import Transport, TransportError
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/transport.py", line 31, in <module>
+    from .serializer import DEFAULT_SERIALIZERS, Deserializer, JSONSerializer
+  File "/home/airflow/.local/lib/python3.7/site-packages/elasticsearch/serializer.py", line 59, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 48, in <module>
+    from pandas.core.groupby import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/generic.py", line 73, in <module>
+    from pandas.core.frame import DataFrame
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/frame.py", line 129, in <module>
+    from pandas.core import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 122, in <module>
+    from pandas.core.describe import describe_ndframe
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/describe.py", line 37, in <module>
+    from pandas.core.reshape.concat import concat
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/reshape/concat.py", line 45, in <module>
+    from pandas.core.internals import concatenate_managers
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/internals/__init__.py", line 1, in <module>
+    from pandas.core.internals.api import make_block  # pseudo-public version
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/internals/api.py", line 23, in <module>
+    from pandas.core.internals.blocks import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/internals/blocks.py", line 17, in <module>
+    from pandas._libs import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/elastic_dag.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.4.2/best-practices.html#reducing-dag-complexity, PID: 71
+[2024-05-20T13:04:15.396+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:06:47.299+0000] {processor.py:154} INFO - Started process (PID=94) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:06:47.326+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-20T13:06:47.343+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:06:47.343+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:06:57.750+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:06:59.718+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:06:59.717+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T13:06:59.997+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:06:59.995+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T13:07:00.935+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 13.787 seconds
+[2024-05-20T13:07:34.406+0000] {processor.py:154} INFO - Started process (PID=121) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:07:34.562+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-20T13:07:34.591+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:07:34.588+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:07:53.949+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:07:57.016+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:07:57.009+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T13:10:51.836+0000] {processor.py:154} INFO - Started process (PID=105) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:10:51.841+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-20T13:10:51.847+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:10:51.847+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:11:02.544+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:11:33.728+0000] {processor.py:154} INFO - Started process (PID=133) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:11:33.741+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-20T13:11:33.767+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:11:33.766+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:11:55.150+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T13:11:57.472+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:11:57.454+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T13:11:58.458+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:11:58.376+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T13:12:00.769+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 27.077 seconds
+[2024-05-20T20:40:05.879+0000] {processor.py:154} INFO - Started process (PID=42) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-20T20:40:05.881+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-20T20:40:05.882+0000] {logging_mixin.py:120} INFO - [2024-05-20T20:40:05.882+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T20:40:07.172+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T20:40:07.245+0000] {logging_mixin.py:120} INFO - [2024-05-20T20:40:07.243+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T20:40:07.351+0000] {logging_mixin.py:120} INFO - [2024-05-20T20:40:07.350+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T20:40:07.435+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 1.558 seconds
+[2024-05-20T21:24:52.757+0000] {processor.py:154} INFO - Started process (PID=50) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-20T21:24:52.764+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-20T21:24:52.777+0000] {logging_mixin.py:120} INFO - [2024-05-20T21:24:52.777+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T21:24:54.696+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-20T21:24:54.802+0000] {logging_mixin.py:120} INFO - [2024-05-20T21:24:54.802+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T21:24:54.876+0000] {logging_mixin.py:120} INFO - [2024-05-20T21:24:54.876+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T21:24:54.935+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 2.186 seconds

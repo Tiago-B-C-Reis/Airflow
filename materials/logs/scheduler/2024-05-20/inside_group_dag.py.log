@@ -1,0 +1,63 @@
+[2024-05-20T09:06:23.719+0000] {processor.py:154} INFO - Started process (PID=55) to work on /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T09:06:23.721+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/inside_group_dag.py for tasks to queue
+[2024-05-20T09:06:23.722+0000] {logging_mixin.py:120} INFO - [2024-05-20T09:06:23.722+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T09:06:23.754+0000] {processor.py:766} INFO - DAG(s) dict_keys(['inside_group_dag']) retrieved from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T09:06:23.806+0000] {logging_mixin.py:120} INFO - [2024-05-20T09:06:23.805+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T09:06:23.842+0000] {logging_mixin.py:120} INFO - [2024-05-20T09:06:23.841+0000] {dag.py:3340} INFO - Setting next_dagrun for inside_group_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T09:06:23.903+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/inside_group_dag.py took 0.189 seconds
+[2024-05-20T09:06:54.355+0000] {processor.py:154} INFO - Started process (PID=92) to work on /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T09:06:54.356+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/inside_group_dag.py for tasks to queue
+[2024-05-20T09:06:54.357+0000] {logging_mixin.py:120} INFO - [2024-05-20T09:06:54.357+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T09:06:54.370+0000] {processor.py:766} INFO - DAG(s) dict_keys(['inside_group_dag']) retrieved from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T09:06:54.389+0000] {logging_mixin.py:120} INFO - [2024-05-20T09:06:54.389+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T09:06:54.402+0000] {logging_mixin.py:120} INFO - [2024-05-20T09:06:54.402+0000] {dag.py:3340} INFO - Setting next_dagrun for inside_group_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T09:06:54.411+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/inside_group_dag.py took 0.057 seconds
+[2024-05-20T13:02:58.103+0000] {processor.py:154} INFO - Started process (PID=56) to work on /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:02:58.105+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/inside_group_dag.py for tasks to queue
+[2024-05-20T13:02:58.107+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:02:58.107+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:02:58.132+0000] {processor.py:766} INFO - DAG(s) dict_keys(['inside_group_dag']) retrieved from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:02:58.274+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:02:58.273+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T13:02:58.388+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:02:58.387+0000] {dag.py:3340} INFO - Setting next_dagrun for inside_group_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T13:02:58.453+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/inside_group_dag.py took 0.355 seconds
+[2024-05-20T13:07:01.348+0000] {processor.py:154} INFO - Started process (PID=103) to work on /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:07:01.352+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/inside_group_dag.py for tasks to queue
+[2024-05-20T13:07:01.356+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:07:01.356+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:07:02.242+0000] {processor.py:766} INFO - DAG(s) dict_keys(['inside_group_dag']) retrieved from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:07:03.474+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:07:03.472+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T13:07:03.770+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:07:03.768+0000] {dag.py:3340} INFO - Setting next_dagrun for inside_group_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T13:07:10.950+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/inside_group_dag.py took 9.610 seconds
+[2024-05-20T13:08:00.907+0000] {processor.py:154} INFO - Started process (PID=134) to work on /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:08:00.915+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/inside_group_dag.py for tasks to queue
+[2024-05-20T13:08:00.926+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:08:00.925+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:08:04.448+0000] {processor.py:766} INFO - DAG(s) dict_keys(['inside_group_dag']) retrieved from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:08:11.191+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:08:11.148+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T13:08:12.133+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:08:12.122+0000] {dag.py:3340} INFO - Setting next_dagrun for inside_group_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T13:08:12.450+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/inside_group_dag.py took 11.708 seconds
+[2024-05-20T13:11:04.361+0000] {processor.py:154} INFO - Started process (PID=109) to work on /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:11:04.383+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/inside_group_dag.py for tasks to queue
+[2024-05-20T13:11:04.386+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:11:04.386+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:11:05.066+0000] {processor.py:766} INFO - DAG(s) dict_keys(['inside_group_dag']) retrieved from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:11:08.866+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:11:08.786+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T13:11:12.768+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:11:12.760+0000] {dag.py:3340} INFO - Setting next_dagrun for inside_group_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T13:11:14.648+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/inside_group_dag.py took 10.343 seconds
+[2024-05-20T13:12:01.600+0000] {processor.py:154} INFO - Started process (PID=147) to work on /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:12:01.643+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/inside_group_dag.py for tasks to queue
+[2024-05-20T13:12:01.684+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:12:01.683+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:12:03.818+0000] {processor.py:766} INFO - DAG(s) dict_keys(['inside_group_dag']) retrieved from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T13:12:06.013+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:12:06.012+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T13:12:06.474+0000] {logging_mixin.py:120} INFO - [2024-05-20T13:12:06.473+0000] {dag.py:3340} INFO - Setting next_dagrun for inside_group_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T13:12:06.682+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/inside_group_dag.py took 5.197 seconds
+[2024-05-20T20:40:07.866+0000] {processor.py:154} INFO - Started process (PID=54) to work on /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T20:40:07.871+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/inside_group_dag.py for tasks to queue
+[2024-05-20T20:40:07.873+0000] {logging_mixin.py:120} INFO - [2024-05-20T20:40:07.873+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T20:40:07.915+0000] {processor.py:766} INFO - DAG(s) dict_keys(['inside_group_dag']) retrieved from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T20:40:08.018+0000] {logging_mixin.py:120} INFO - [2024-05-20T20:40:08.017+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T20:40:08.065+0000] {logging_mixin.py:120} INFO - [2024-05-20T20:40:08.064+0000] {dag.py:3340} INFO - Setting next_dagrun for inside_group_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T20:40:08.094+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/inside_group_dag.py took 0.238 seconds
+[2024-05-20T21:24:55.246+0000] {processor.py:154} INFO - Started process (PID=56) to work on /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T21:24:55.249+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/inside_group_dag.py for tasks to queue
+[2024-05-20T21:24:55.251+0000] {logging_mixin.py:120} INFO - [2024-05-20T21:24:55.251+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T21:24:55.291+0000] {processor.py:766} INFO - DAG(s) dict_keys(['inside_group_dag']) retrieved from /opt/airflow/dags/inside_group_dag.py
+[2024-05-20T21:24:55.345+0000] {logging_mixin.py:120} INFO - [2024-05-20T21:24:55.345+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-20T21:24:55.377+0000] {logging_mixin.py:120} INFO - [2024-05-20T21:24:55.377+0000] {dag.py:3340} INFO - Setting next_dagrun for inside_group_dag to 2024-05-19T00:00:00+00:00, run_after=2024-05-20T00:00:00+00:00
+[2024-05-20T21:24:55.413+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/inside_group_dag.py took 0.170 seconds

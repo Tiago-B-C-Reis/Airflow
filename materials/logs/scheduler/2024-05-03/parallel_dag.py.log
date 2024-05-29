@@ -1,0 +1,14 @@
+[2024-05-03T18:23:12.631+0000] {processor.py:154} INFO - Started process (PID=57) to work on /opt/airflow/dags/parallel_dag.py
+[2024-05-03T18:23:12.632+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parallel_dag.py for tasks to queue
+[2024-05-03T18:23:12.633+0000] {logging_mixin.py:120} INFO - [2024-05-03T18:23:12.633+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parallel_dag.py
+[2024-05-03T18:23:12.665+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parallel_dag']) retrieved from /opt/airflow/dags/parallel_dag.py
+[2024-05-03T18:23:12.716+0000] {logging_mixin.py:120} INFO - [2024-05-03T18:23:12.716+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-03T18:23:12.736+0000] {logging_mixin.py:120} INFO - [2024-05-03T18:23:12.736+0000] {dag.py:3340} INFO - Setting next_dagrun for parallel_dag to 2024-05-02T00:00:00+00:00, run_after=2024-05-03T00:00:00+00:00
+[2024-05-03T18:23:12.752+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parallel_dag.py took 0.126 seconds
+[2024-05-03T18:23:44.013+0000] {processor.py:154} INFO - Started process (PID=92) to work on /opt/airflow/dags/parallel_dag.py
+[2024-05-03T18:23:44.014+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/parallel_dag.py for tasks to queue
+[2024-05-03T18:23:44.014+0000] {logging_mixin.py:120} INFO - [2024-05-03T18:23:44.014+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/parallel_dag.py
+[2024-05-03T18:23:44.026+0000] {processor.py:766} INFO - DAG(s) dict_keys(['parallel_dag']) retrieved from /opt/airflow/dags/parallel_dag.py
+[2024-05-03T18:23:44.048+0000] {logging_mixin.py:120} INFO - [2024-05-03T18:23:44.048+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-03T18:23:44.063+0000] {logging_mixin.py:120} INFO - [2024-05-03T18:23:44.063+0000] {dag.py:3340} INFO - Setting next_dagrun for parallel_dag to 2024-05-02T00:00:00+00:00, run_after=2024-05-03T00:00:00+00:00
+[2024-05-03T18:23:44.073+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/parallel_dag.py took 0.063 seconds

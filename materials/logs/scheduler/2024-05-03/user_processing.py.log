@@ -1,0 +1,14 @@
+[2024-05-03T18:23:10.680+0000] {processor.py:154} INFO - Started process (PID=50) to work on /opt/airflow/dags/user_processing.py
+[2024-05-03T18:23:10.691+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/user_processing.py for tasks to queue
+[2024-05-03T18:23:10.693+0000] {logging_mixin.py:120} INFO - [2024-05-03T18:23:10.693+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/user_processing.py
+[2024-05-03T18:23:11.962+0000] {processor.py:766} INFO - DAG(s) dict_keys(['user_processing']) retrieved from /opt/airflow/dags/user_processing.py
+[2024-05-03T18:23:12.372+0000] {logging_mixin.py:120} INFO - [2024-05-03T18:23:12.371+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-03T18:23:12.428+0000] {logging_mixin.py:120} INFO - [2024-05-03T18:23:12.428+0000] {dag.py:3340} INFO - Setting next_dagrun for user_processing to 2024-05-02T00:00:00+00:00, run_after=2024-05-03T00:00:00+00:00
+[2024-05-03T18:23:12.458+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/user_processing.py took 1.799 seconds
+[2024-05-03T18:23:42.843+0000] {processor.py:154} INFO - Started process (PID=85) to work on /opt/airflow/dags/user_processing.py
+[2024-05-03T18:23:42.847+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/user_processing.py for tasks to queue
+[2024-05-03T18:23:42.849+0000] {logging_mixin.py:120} INFO - [2024-05-03T18:23:42.848+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/user_processing.py
+[2024-05-03T18:23:43.524+0000] {processor.py:766} INFO - DAG(s) dict_keys(['user_processing']) retrieved from /opt/airflow/dags/user_processing.py
+[2024-05-03T18:23:43.772+0000] {logging_mixin.py:120} INFO - [2024-05-03T18:23:43.771+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-03T18:23:43.798+0000] {logging_mixin.py:120} INFO - [2024-05-03T18:23:43.798+0000] {dag.py:3340} INFO - Setting next_dagrun for user_processing to 2024-05-02T00:00:00+00:00, run_after=2024-05-03T00:00:00+00:00
+[2024-05-03T18:23:43.816+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/user_processing.py took 0.991 seconds

@@ -1,0 +1,42 @@
+[2024-05-23T16:01:16.228+0000] {processor.py:154} INFO - Started process (PID=48) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:01:16.233+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-23T16:01:16.236+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:01:16.235+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:01:17.692+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:01:17.856+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:01:17.855+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-23T16:01:17.925+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:01:17.925+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-22T00:00:00+00:00, run_after=2024-05-23T00:00:00+00:00
+[2024-05-23T16:01:17.983+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 1.762 seconds
+[2024-05-23T16:10:47.578+0000] {processor.py:154} INFO - Started process (PID=52) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:10:47.585+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-23T16:10:47.590+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:10:47.589+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:10:48.678+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:10:48.800+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:10:48.799+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-23T16:10:48.846+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:10:48.846+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-22T00:00:00+00:00, run_after=2024-05-23T00:00:00+00:00
+[2024-05-23T16:10:48.882+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 1.316 seconds
+[2024-05-23T16:11:19.942+0000] {processor.py:154} INFO - Started process (PID=86) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:11:19.950+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-23T16:11:19.954+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:11:19.953+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:11:20.820+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:11:20.943+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:11:20.942+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-23T16:11:21.025+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:11:21.025+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-22T00:00:00+00:00, run_after=2024-05-23T00:00:00+00:00
+[2024-05-23T16:11:21.115+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 1.198 seconds
+[2024-05-23T16:11:51.819+0000] {processor.py:154} INFO - Started process (PID=117) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:11:51.824+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-23T16:11:51.828+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:11:51.828+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:11:52.082+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:11:52.126+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:11:52.126+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-23T16:11:52.151+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:11:52.151+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-22T00:00:00+00:00, run_after=2024-05-23T00:00:00+00:00
+[2024-05-23T16:11:52.165+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 0.350 seconds
+[2024-05-23T16:12:22.757+0000] {processor.py:154} INFO - Started process (PID=154) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:12:22.758+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-23T16:12:22.759+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:12:22.759+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:12:22.992+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:12:23.137+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:12:23.136+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-23T16:12:23.167+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:12:23.167+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-22T00:00:00+00:00, run_after=2024-05-23T00:00:00+00:00
+[2024-05-23T16:12:23.308+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 0.555 seconds
+[2024-05-23T16:12:53.985+0000] {processor.py:154} INFO - Started process (PID=191) to work on /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:12:53.987+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/elastic_dag.py for tasks to queue
+[2024-05-23T16:12:53.988+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:12:53.988+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:12:54.404+0000] {processor.py:766} INFO - DAG(s) dict_keys(['elastic_dag']) retrieved from /opt/airflow/dags/elastic_dag.py
+[2024-05-23T16:12:54.453+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:12:54.452+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2024-05-23T16:12:54.474+0000] {logging_mixin.py:120} INFO - [2024-05-23T16:12:54.474+0000] {dag.py:3340} INFO - Setting next_dagrun for elastic_dag to 2024-05-22T00:00:00+00:00, run_after=2024-05-23T00:00:00+00:00
+[2024-05-23T16:12:54.490+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/elastic_dag.py took 0.510 seconds
